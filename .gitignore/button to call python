@@ -1,0 +1,2 @@
+#Here is the callback code. Remember to switch from Hscript to Python.
+exec(hou.pwd.parm('python').eval());function() 
