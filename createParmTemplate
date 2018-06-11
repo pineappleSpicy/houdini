@@ -1,0 +1,9 @@
+node = hou.pwd()
+ptg = node.parmTemplateGroup()
+
+parm_folder = hou.FolderParmTemplate("folder", "Extras")
+parm_folder.addParmTemplate( jpi.FloatParmTemplate("noise", "Noise", 1) )
+
+ptg.append(parm_folder)
+
+node.setParmTemplateGroup(ptg)
