@@ -1,6 +1,6 @@
 int prim; vector uvw;
-float dist = xyzdist(1, @P. prim, uvw);
-vector pos = prim(1, "P", prim, uvw);
+float dist = xyzdist(1, @P, prim, uvw);
+vector pos = primuv(1, "P", prim, uvw);
 vector dir = normalize(@P - pos);
 
 if(dir.y<0) removepoint(0, @ptnum);
