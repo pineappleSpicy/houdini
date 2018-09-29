@@ -1,0 +1,9 @@
+def getTopInputNode(node) :
+    inputnode = node.inputs()
+    
+    if inputnode :
+        inputnode = inputnode[0]
+        inputnode = getTopInputNode(inputnode)
+    else :
+        return node
+    return inputnode
