@@ -1,0 +1,7 @@
+float radscale;
+float radius;
+float maxpoints;
+
+int outarray[] = pcfind_radius(0, "", "P", "pscale", radscale, @P, radius, maxpoints);
+int numpoint = len(outarray);
+removepoints(0, numpoint<maxpoints?@ptnum:-1);
