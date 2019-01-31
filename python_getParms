@@ -1,0 +1,6 @@
+def getParms_func(sourceNode, desNode) :
+    allParms = sourceNode.parmTemplateGroup().parmTemplates()
+    desParms = desNode.parmTemplateGroup()
+    for parm in allParms :
+        desParms.addParmTemplate(parm)
+    desNode.setParmTemplateGroup(desParms)
