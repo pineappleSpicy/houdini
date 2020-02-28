@@ -1,0 +1,12 @@
+def attr
+    node = hou.pwd()
+    geo = node.geometry()
+    
+    posi = node.position()
+    print posi[0]
+    
+    pathattr = geo.findPrimAttrib("path").strings()
+    
+    blastdeNode = node.parent().createNode("blast")
+    
+    blastdeNode.setPosition( (posi[0], posi[1]-1) )
